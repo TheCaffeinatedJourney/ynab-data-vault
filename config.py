@@ -15,3 +15,11 @@ SINCE_DATE = "2025-03-13"
 
 # Path for storing server knowledge to allow incremental updates
 SERVER_KNOWLEDGE_FILE = "server_knowledge.txt"
+
+
+# PostgreSQL Database Config
+POSTGRES_DB = os.getenv("POSTGRES_DB")
+POSTGRES_USER = os.getenv("POSTGRES_USER")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
+POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost") 
+POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")
