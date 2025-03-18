@@ -11,4 +11,7 @@ BUDGET_ID = os.getenv("BUDGET_ID")
 BASE_URL = "https://api.ynab.com/v1"
 
 # SINCE_DATE is the date of the first transaction to fetch (defaults to 30 days ago if not set)
-SINCE_DATE = "2025-01-01"  
+SINCE_DATE = "2025-03-13"  
+
+# Path for storing server knowledge to allow incremental updates
+SERVER_KNOWLEDGE_FILE = "server_knowledge.txt"
